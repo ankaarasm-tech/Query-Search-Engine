@@ -1,0 +1,4 @@
+nanodjango
+Django
+gunicorn
+whitenoise
