@@ -318,7 +318,7 @@ def _add_to_history(request, q):
     request.session.modified = True
 
 
-def _ddg_json(url, timeout=10):
+def _ddg_json(url, timeout=30):
     """Fetch a URL and parse the JSON body. A custom User-Agent is required -
     DuckDuckGo rejects requests with Python's default 'Python-urllib' header."""
     req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; MiniSearch/1.0)"})
